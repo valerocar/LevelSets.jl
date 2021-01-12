@@ -33,4 +33,6 @@ level = 1.5 #
 les =  levelcurve(ps, ts, fs,level)
 ```
 
-## Level surfaces in 3-dimensional space
+The resulting array `les` (level edges) has shape `k x 2d`, where `k` is the number of edges.
+in the level set and `d` is the dimension of the underlying space (usually `k=2,3`).
+Each row in `les`  represent a pair of points than make a line in the level set.
